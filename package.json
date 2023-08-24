@@ -1,6 +1,6 @@
 {
   "name": "postcss-px2px",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for PostCSS that convert px to rem AND rem to px AND px to rpx AND rpx to px",
   "main": "index.js",
   "scripts": {
