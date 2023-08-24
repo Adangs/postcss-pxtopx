@@ -2,7 +2,7 @@
 A plugin for PostCSS that convert px to rem AND rem to px AND px to rpx AND rpx to px
 
 ### Refer to
-[pxtorem](https://github.com/cuth/postcss-pxtorem) AND [pxtorpx-pro](https://github.com/Genuifx/postcss-pxtorpx-pro) AND 
+[pxtorem](https://github.com/cuth/postcss-pxtorem) AND [pxtorpx-pro](https://github.com/Genuifx/postcss-pxtorpx-pro) 
 
 ### Options
 ```js
