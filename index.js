@@ -10,6 +10,7 @@ const defaults = {
   propBlackList: [],
   minPixelValue: 0,
   exclude: null,
+  replace: true,
   transform: x => 2 * x
 };
 
@@ -48,7 +49,7 @@ module.exports = options => {
       if (isExcludeFile) return;
 
       if (
-        decl.value.indexOf("px") === -1 ||
+        decl.value.indexOf(opts.input) === -1 ||
         unsatisfyPropList(decl.prop) ||
         blacklistedSelector(opts.selectorBlackList, decl.parent.selector)
       )
@@ -63,14 +64,6 @@ module.exports = options => {
         decl.value = value;
       } else {
         decl.cloneAfter({ value: value });
-      }
-    },
-    AtRule(atRule) {
-      if (isExcludeFile) return;
-
-      if (opts.mediaQuery && atRule.name === "media") {
-        if (atRule.params.indexOf("px") === -1) return;
-        atRule.params = atRule.params.replace(pxRegex, pxReplaceFunc);
       }
     }
   };
