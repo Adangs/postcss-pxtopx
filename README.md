@@ -1,5 +1,8 @@
-# postcss-pxtopx
-px to rem AND rem to px AND px to rpx AND rpx to px
+# postcss-px2px
+A plugin for PostCSS that convert px to rem AND rem to px AND px to rpx AND rpx to px
+
+### Refer to
+[pxtorem](https://github.com/cuth/postcss-pxtorem) AND [pxtorpx-pro](https://github.com/Genuifx/postcss-pxtorpx-pro) AND 
 
 ### Input/Output
 With the default settings, only font related properties are targeted.
