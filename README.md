@@ -1,6 +1,15 @@
 # postcss-px2px
 A plugin for PostCSS that convert px to rem AND rem to px AND px to rpx AND rpx to px
 
+## install
+```shell
+yarn add postcss-px2px -D
+
+or
+
+npm i postcss-px2px -D
+```
+
 ### Refer to
 [pxtorem](https://github.com/cuth/postcss-pxtorem) AND [pxtorpx-pro](https://github.com/Genuifx/postcss-pxtorpx-pro) 
 
